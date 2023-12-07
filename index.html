@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>University Guide</title>
+  </head>
+  <body>
+    <h1>University Guide</h1>
+    <div class="main">
+      <div id="search-university">
+        <!-- <label for="countryInput">Search by Country:</label> -->
+        <input type="text" id="countryInput" placeholder="Enter country name" />
+        <button onclick="searchUniversities()">Search</button>
+
+        <p>
+          Total universities in the country:
+          <span id="totalUniversities">0</span>
+        </p>
+
+        <ul id="universityList"></ul>
+      </div>
+      <div id="get-highest-lowest">
+        <button onclick="findHighestLowest()">Find Highest/Lowest</button>
+        <p>Highest number of universities are in: <span id="highestCountry"></span></p>
+        <p>Lowest number of universities are in: <span id="lowestCountry"></span></p>
+      </div>
+      <div id="loadingScreen">
+        <img src="loading.gif" alt="Loading">
+        <div id="loadingText">Loading...</div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
