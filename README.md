@@ -1,1 +1,1 @@
-# Blitz-frontend-developer-assignment
+# pratice project 
